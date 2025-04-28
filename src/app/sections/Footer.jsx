@@ -5,15 +5,15 @@ import Logo from "../components/Logo"
 export const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-green-800 to-green-900 text-white pt-16 pb-4">
-      <div className=" max-w-10/12 max-md:max-w-11/12 mx-auto px-4">
+      <div className=" max-w-10/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0">
         <div className="grid grid-cols-4 max-md:grid-cols-2 max-xl:grid-cols-3 max-sm:grid-cols-1 gap-10">
           {/* Logo + redes */}
           <div className="col-span-1 md:col-span-1">
             <Logo className="mb-6" />
-            <p className="text-green-200 mb-4">
+            <p className="text-green-200 my-4">
               Del campo a tu mesa, sin intermediarios. Frutas ecológicas cultivadas con amor y respeto por la naturaleza.
             </p>
-            <div className="flex space-x-4 mt-6">
+            <div className="flex space-x-4 mt-4">
               {[ 
                 { Icon: Facebook, link: "https://facebook.com", label: "Facebook" },
                 { Icon: Instagram, link: "https://instagram.com", label: "Instagram" },

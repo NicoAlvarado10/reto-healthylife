@@ -30,7 +30,7 @@ export const Testimonials = () => {
       ]
   return (
     <section id="testimonials" className="py-20 bg-gradient-to-b from-white to-green-50">
-    <div className="max-w-10/12 max-md:max-w-11/12 mx-auto px-4">
+    <div className="max-w-10/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0">
       <div
         className="max-w-4xl mx-auto text-center mb-16"
       >
@@ -62,7 +62,7 @@ export const Testimonials = () => {
           className="text-xl text-gray-700">Descubre por qué nuestros clientes confían en nosotros</motion.p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 max-xl:grid-cols-2 max-sm:grid-cols-1 gap-8">
         {testimonials.map((testimonial, index) => (
           <motion.div
             key={index}

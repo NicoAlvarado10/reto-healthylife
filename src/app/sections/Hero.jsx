@@ -4,8 +4,8 @@ import { motion } from "framer-motion"
 export const Hero = () => {
   return (
     <section className="py-20">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 mx-auto max-md:max-w-11/12 max-md:px-4 pt-10 max-md:gap-4 ">
-            <div className=" 2xl:pl-20 ">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 mx-auto max-md:max-w-11/12 max-md:px-4 pt-10 max-xl:gap-4 max-sm:px-0">
+            <div className=" 2xl:pl-20 md:p-4 ">
             <motion.span
               className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-6"
               initial={{ opacity: 0, y: 20 }}
@@ -39,7 +39,7 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
                 action="/">
-                <div className="flex items-center max-sm:flex-col gap-2">
+                <div className="flex items-center flex-wrap max-sm:flex-col gap-2">
                 <input
                       type="email"
                       className=
@@ -102,7 +102,11 @@ export const Hero = () => {
             </motion.div>
             </div>
          
-                <img className="max-w-full h-auto mx-auto" src="/hero-2.webp" alt="hero-image" />
+                <motion.img 
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{duration:0.6}}
+                className="max-w-full object-cover h-full mx-auto" src="/hero-2.webp" alt="hero-image" />
            
         </div>
     </section>

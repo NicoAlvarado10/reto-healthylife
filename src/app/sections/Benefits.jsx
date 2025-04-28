@@ -50,7 +50,7 @@ const benefits = [
 export const Benefits = () => {
   return (
     <section id="benefits" className="py-20 bg-gradient-to-b w-full from-green-50 to-white">
-      <div className="w-10/12 max-md:max-w-full mx-auto px-4">
+      <div className="w-10/12 max-md:w-11/12 mx-auto px-4 max-sm:px-0">
         <div
           className="max-w-4xl mx-auto text-center mb-16"
         >

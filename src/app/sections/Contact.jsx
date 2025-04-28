@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 export const Contact = () => {
   return (
     <section id="join" className="py-20 bg-white">
-    <div className=" max-w-11/12 max-md:max-w-11/12 mx-auto px-4">
+    <div className=" max-w-11/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0">
       <div className="max-w-full mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div
@@ -54,21 +54,21 @@ export const Contact = () => {
                   alt="Usuario"
                   width={40}
                   height={40}
-                  className="rounded-full border-2 border-white"
+                  className="rounded-full border-2 object-cover border-white"
                 />
                 <img
                   src="/user2.webp"
                   alt="Usuario"
                   width={40}
                   height={40}
-                  className="rounded-full border-2 border-white"
+                  className="rounded-full border-2 object-cover border-white"
                 />
                 <img
                   src="/user3.webp"
                   alt="Usuario"
                   width={40}
                   height={40}
-                  className="rounded-full border-2 border-white"
+                  className="rounded-full border-2 object-cover border-white"
                 />
               </div>
               <p className="text-sm text-gray-600">Más de 500 personas se unieron este mes</p>

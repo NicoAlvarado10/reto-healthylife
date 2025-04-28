@@ -34,7 +34,7 @@ export const Products = () => {
       ]
   return (
     <section id="products" className="py-20 bg-white">
-    <div className=" max-w-10/12 max-md:max-w-11/12 mx-auto px-4">
+    <div className=" max-w-10/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0">
       <div
         className="max-w-full mx-auto text-center mb-16"
        
@@ -91,7 +91,7 @@ export const Products = () => {
                 </span>
               )}
             </div>
-            <div className="p-6">
+            <div className="px-6 py-3">
               <h3 className="text-xl font-bold mb-2 text-gray-900">{basket.name}</h3>
               <p className="text-gray-600 mb-4">{basket.description}</p>
               <ul className="space-y-2 mb-4">

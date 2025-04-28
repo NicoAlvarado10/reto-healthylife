@@ -4,8 +4,8 @@ import { Check } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 bg-white overflow-x-hidden">
-    <div className=" max-w-10/12 mx-auto max-xl:max-w-11/12 px-4">
+    <section id="about" className="py-20 bg-white ">
+    <div className=" max-w-10/12 mx-auto max-xl:max-w-11/12 px-4 max-sm-px-0">
       <div
         className="max-w-4xl mx-auto text-center mb-16">
         <motion.span
@@ -38,7 +38,7 @@ export const About = () => {
         </motion.p>
       </div>
 
-      <div className="flex flex-col md:flex-row  gap-10">
+      <div className="flex max-md:flex-col gap-10">
         <motion.div
           className="md:w-1/2 overflow-hidden group"
           initial={{ opacity: 0, y: 20}}
@@ -135,10 +135,7 @@ export const About = () => {
                 <Check className="w-5 h-5 text-green-600" />
               </div>
               <span
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 1.3 }}
+  
               >Precio justo</span>
             </motion.div>
             <motion.div
