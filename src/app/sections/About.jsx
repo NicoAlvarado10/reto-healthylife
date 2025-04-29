@@ -4,10 +4,10 @@ import { Check } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 bg-white ">
+    <section id="about" className="py-20 bg-green-50 ">
     <div className=" max-w-10/12 mx-auto max-xl:max-w-11/12 px-4 max-sm-px-0">
       <div
-        className="max-w-4xl mx-auto text-center mb-16">
+        className="max-w-4xl  mx-auto text-center mb-16">
         <motion.span
          initial={{ opacity: 0, y: 30 }}
          whileInView={{ opacity: 1, y: 0 }}

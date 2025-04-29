@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className=" max-w-10/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0">
         <div className="grid grid-cols-4 max-md:grid-cols-2 max-xl:grid-cols-3 max-sm:grid-cols-1 gap-10">
           {/* Logo + redes */}
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1 md:col-span-1 ">
             <Logo className="mb-6" />
             <p className="text-green-200 my-4">
               Del campo a tu mesa, sin intermediarios. Frutas ecológicas cultivadas con amor y respeto por la naturaleza.

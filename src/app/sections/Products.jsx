@@ -33,7 +33,7 @@ export const Products = () => {
         },
       ]
   return (
-    <section id="products" className="py-20 bg-white">
+    <section id="products" className="py-20 bg-green-50">
     <div className=" max-w-10/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0">
       <div
         className="max-w-full mx-auto text-center mb-16"

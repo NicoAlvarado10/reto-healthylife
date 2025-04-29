@@ -52,7 +52,7 @@ export default function Header() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="max-w-10/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0 flex justify-between items-center">
+        <div className="max-w-10/12 max-xl:max-w-full max-md:max-w-11/12 mx-auto px-4 max-sm:px-0 flex justify-between items-center gap-4">
           {/* Logo */}
           <a href="#hero" className="z-50 ">
             <Logo size={scrolled || isOpen ? "small" : "default"} />

@@ -3,8 +3,8 @@ import { Star } from "lucide-react"
 import { motion } from "framer-motion"
 export const Hero = () => {
   return (
-    <section className="py-20">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 mx-auto max-md:max-w-11/12 max-md:px-4 pt-10 max-xl:gap-4 max-sm:px-0">
+    <section className="py-20 max-sm:pb-0" id="hero">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 mx-auto max-md:max-w-11/12 max-md:px-4 pt-10 max-xl:gap-4 max-sm:px-0 justify-center items-center">
             <div className=" 2xl:pl-20 md:p-4 ">
             <motion.span
               className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-6"
@@ -15,19 +15,20 @@ export const Hero = () => {
               100% Ecológico y Sostenible
             </motion.span>
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 leading-tight "
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-            >
-              Frutas{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-500">
-                ecológicas
-              </span>{" "}
-              directas a tu hogar
-            </motion.h1>
+  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 leading-tight"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.2, duration: 0.6 }}
+>
+  Frutas{" "}
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-400 ">
+    ecológicas
+  </span>{" "}
+  directas a tu hogar
+</motion.h1>
+
             <motion.p
-              className="text-lg md:text-xl mb-8 text-gray-700 max-w-lg max-md:max-w-full"
+              className="text-lg md:text-xl mb-8 text-gray-700 "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
@@ -39,7 +40,7 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
                 action="/">
-                <div className="flex items-center flex-wrap max-sm:flex-col gap-2">
+                <div className="flex items-center flex-wrap max-sm:flex-col gap-2 max-sm:gap-1">
                 <input
                       type="email"
                       className=
@@ -56,7 +57,7 @@ export const Hero = () => {
                     Mantente informado
                   </motion.button>
                 </div>
-                <p className="text-xs text-gray-500 mt-2 max-w-lg">
+                <p className="text-xs text-gray-500 mt-2 max-sm:mt-4  max-w-lg">
                 Sé el primero en conocer nuestro lanzamiento y recibe un 10% de descuento en tu primer pedido.
               </p>
                 </motion.form>

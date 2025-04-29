@@ -12,7 +12,7 @@ export default function Logo() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
         >
-            <img src="/Healthylife.webp" className="h-20 w-20 object-contain" alt="logo" />
+            <span className="text-lg font-semibold italic  text-green-500 flex flex-col justify-center">HEALTHYLIFE <br /><span className="text-amber-500">FRUITS</span></span>
         </motion.div>
     );
 }
