@@ -13,7 +13,7 @@ const benefits = [
 
 export const Benefits = () => {
   return (
-    <section id="benefits" className="relative py-20 bg-white">
+    <section id="benefits" className="relative py-20 bg-white overflow-x-hidden">
    
 
       <div className="relative max-w-4xl mx-auto space-y-16 px-4">
@@ -45,7 +45,7 @@ export const Benefits = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: i * 0.2 }}
           >
-            <div className="w-full md:w-1/2 p-6 bg-green-50 shadow-lg">
+            <div className="w-full md:w-1/2 p-6 bg-white shadow-lg rounded-2xl">
               <h3 className="text-2xl font-semibold mb-4 text-gray-900">{b.title}</h3>
               <p className="text-gray-700 leading-relaxed">{b.description}</p>
             </div>
