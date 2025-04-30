@@ -73,13 +73,13 @@ export const Products = () => {
         {fruitBaskets.map((basket, index) => (
           <motion.article
             key={index}
-            className=" rounded-xl shadow-lg overflow-hidden  border border-gray-100 hover:shadow-xl  transition-all"
+            className=" rounded-xl shadow-lg overflow-hidden  border border-gray-100 hover:shadow-xl  transition-all   "
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1, duration: 0.5 }}
           >
-            <div className="relative">
+            <div className="relative ">
               <img
                 src={basket.image }
                 alt={basket.name}
@@ -93,7 +93,7 @@ export const Products = () => {
                 </span>
               )}
             </div>
-            <div className="px-6 py-3 bg-gradient-to-b from-green-400 to-green-900">
+            <div className="px-6 py-3 bg-gradient-to-b from-green-400 to-green-950 h-full">
               <h3 className="text-xl font-bold mb-2 text-white">{basket.name}</h3>
               <p className="text-green-100 mb-4">{basket.description}</p>
               <ul className="space-y-2 mb-4">
