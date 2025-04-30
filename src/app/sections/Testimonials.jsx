@@ -29,7 +29,7 @@ export const Testimonials = () => {
         },
       ]
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-b from-white to-green-50">
+    <section id="testimonials" className="py-20 ">
     <div className="max-w-10/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0">
       <div
         className="max-w-4xl mx-auto text-center mb-16"
@@ -39,7 +39,7 @@ export const Testimonials = () => {
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.8 }}
-          className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium mb-4">
+          className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-4">
             Testimonios
           </motion.span>
           <motion.h2 
@@ -66,7 +66,7 @@ export const Testimonials = () => {
         {testimonials.map((testimonial, index) => (
           <motion.div
             key={index}
-            className="bg-white p-8 rounded-xl shadow-lg"
+            className="bg-gradient-to-b from-green-400 to-green-900 p-8 rounded-xl shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -81,8 +81,8 @@ export const Testimonials = () => {
                 className="rounded-full object-cover"
               />
               <div>
-                <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                <p className="text-sm text-gray-600">{testimonial.role}</p>
+                <h4 className="font-bold text-white">{testimonial.name}</h4>
+                <p className="text-sm text-green-100">{testimonial.role}</p>
               </div>
             </div>
             <div className="flex mb-4">
@@ -93,7 +93,7 @@ export const Testimonials = () => {
                 />
               ))}
             </div>
-            <p className="text-gray-700 italic">"{testimonial.quote}"</p>
+            <p className="text-green-100 italic">"{testimonial.quote}"</p>
           </motion.div>
         ))}
       </div>

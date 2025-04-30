@@ -33,8 +33,10 @@ export const Products = () => {
         },
       ]
   return (
-    <section id="products" className="py-20 bg-green-50">
+    <section id="products" className="py-20 ">
+      
     <div className=" max-w-10/12 max-md:max-w-11/12 mx-auto px-4 max-sm:px-0">
+    
       <div
         className="max-w-full mx-auto text-center mb-16"
        
@@ -44,7 +46,7 @@ export const Products = () => {
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.8 }}
-          className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium mb-4">
+          className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-4">
             Próximamente
           </motion.span>
           <motion.h2 
@@ -71,7 +73,7 @@ export const Products = () => {
         {fruitBaskets.map((basket, index) => (
           <motion.article
             key={index}
-            className="bg-white rounded-xl shadow-lg overflow-hidden  border border-gray-100 hover:shadow-xl transition-all"
+            className=" rounded-xl shadow-lg overflow-hidden  border border-gray-100 hover:shadow-xl  transition-all"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -91,13 +93,13 @@ export const Products = () => {
                 </span>
               )}
             </div>
-            <div className="px-6 py-3">
-              <h3 className="text-xl font-bold mb-2 text-gray-900">{basket.name}</h3>
-              <p className="text-gray-600 mb-4">{basket.description}</p>
+            <div className="px-6 py-3 bg-gradient-to-b from-green-400 to-green-900">
+              <h3 className="text-xl font-bold mb-2 text-white">{basket.name}</h3>
+              <p className="text-green-100 mb-4">{basket.description}</p>
               <ul className="space-y-2 mb-4">
                 {basket.features.map((feature, i) => (
-                  <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                    <Check className="w-4 h-4 text-green-500" />
+                  <li key={i} className="flex items-center gap-2 text-sm text-green-100">
+                    <Check className="w-4 h-4 text-green-400" />
                     {feature}
                   </li>
                 ))}

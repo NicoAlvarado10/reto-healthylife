@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="about" className="py-20 bg-green-50 ">
+    <section id="about" className="py-20 ">
     <div className=" max-w-10/12 mx-auto max-xl:max-w-11/12 px-4 max-sm-px-0">
       <div
         className="max-w-4xl  mx-auto text-center mb-16">
@@ -13,7 +13,7 @@ export const About = () => {
          whileInView={{ opacity: 1, y: 0 }}
          viewport={{ once: true }}
          transition={{ duration: 0.8 }}
-        className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium mb-4">
+        className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-4">
           Nuestra Historia
         </motion.span>
         <motion.h2 

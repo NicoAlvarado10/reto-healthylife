@@ -11,7 +11,7 @@ export const Contact = () => {
             className="text-left"
       
           >
-            <span className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium mb-4">
+            <span className="inline-block px-4 py-1 rounded-full bg-green-100 text-green-700 text-sm font-medium mb-4">
               Únete a nosotros
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Forma parte de nuestra comunidad</h2>
