@@ -44,3 +44,6 @@ Para ejecutar esta landing page en tu entorno local, sigue estos pasos:
 
 4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
+## Tiempo total de trabajo:
+11 horas.
+
